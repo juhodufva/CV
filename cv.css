@@ -1,0 +1,92 @@
+body {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+    background-size: cover;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+    from { background-position: top; background-size: 3000px; }
+    to { background-position: -100px 0px; background-size: 2750px; }
+}
+
+@keyframes slidein {
+    from { background-position: top; background-size: 3000px; }
+    to { background-position: -100px 0px; background-size: 2750px; }
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(75, 75, 250, 0.3);
+    border-radius: 3px;
+}
+
+h1, h2, p {
+    text-align: center;
+    
+}
+body{
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    background-color: #f2f2f2;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1; /* Lisätty z-indeksi, jotta dropdown näkyy päällimmäisenä */
+}
+
+.navbar-dropdown a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.navbar:hover .navbar-dropdown {
+    display: block;
+}
+
+/* Lisätty hover-tyyli dropdown-linkkien päälle */
+.navbar-dropdown a:hover {
+    background-color: #ddd;
+}
