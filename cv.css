@@ -36,7 +36,10 @@ body {
 }
 
 h1, h2, p {
+    outline-color: #ddd;
     text-align: center;
+    color: #333;
+    text-shadow:  1px 1px 0 gainsboro,
     
 }
 body{
@@ -48,6 +51,17 @@ ul {
     padding: 0;
     margin: 0;
 }
+a {
+    color: #333;
+}
+a:hover {
+    color: #ddd;
+}
+#kuva {
+    width: 540px;
+    height: 360px;
+}
+
 .navbar {
     background-color: #f2f2f2;
     height: 60px;
